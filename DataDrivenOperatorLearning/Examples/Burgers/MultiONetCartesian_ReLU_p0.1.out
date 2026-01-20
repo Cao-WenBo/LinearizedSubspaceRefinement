@@ -1,0 +1,28 @@
+Memory: 0.45 GB rank:1000 time:2.11143 Loss: 6.32933e-07 Loss (LSR) 4.45543e-07 Error mean: 0.00484066 Error std: 0.00487554 Error mean (LSR): 0.00431279 Error std (LSR): 0.00464575
+Memory: 0.74 GB rank:2000 time:3.59313 Loss: 6.32933e-07 Loss (LSR) 3.97639e-07 Error mean: 0.00484066 Error std: 0.00487554 Error mean (LSR): 0.00442288 Error std (LSR): 0.00454195
+Memory: 1.04 GB rank:3000 time:5.88962 Loss: 6.32933e-07 Loss (LSR) 3.33624e-07 Error mean: 0.00484066 Error std: 0.00487554 Error mean (LSR): 0.00439929 Error std (LSR): 0.00455268
+Memory: 1.39 GB rank:4000 time:8.62248 Loss: 6.32933e-07 Loss (LSR) 2.61093e-07 Error mean: 0.00484066 Error std: 0.00487554 Error mean (LSR): 0.0042991 Error std (LSR): 0.00452155
+Memory: 1.77 GB rank:5000 time:12.0008 Loss: 6.32933e-07 Loss (LSR) 2.05223e-07 Error mean: 0.00484066 Error std: 0.00487554 Error mean (LSR): 0.00391179 Error std (LSR): 0.00388064
+Memory: 2.42 GB rank:6000 time:16.2757 Loss: 6.32933e-07 Loss (LSR) 1.45538e-07 Error mean: 0.00484066 Error std: 0.00487554 Error mean (LSR): 0.00345737 Error std (LSR): 0.00379447
+Memory: 2.91 GB rank:7000 time:24.394 Loss: 6.32933e-07 Loss (LSR) 5.37423e-07 Error mean: 0.00484066 Error std: 0.00487554 Error mean (LSR): 0.0049128 Error std (LSR): 0.00315761
+Memory: 3.42 GB rank:8000 time:32.9719 Loss: 6.32933e-07 Loss (LSR) 5.95536e-06 Error mean: 0.00484066 Error std: 0.00487554 Error mean (LSR): 0.0159611 Error std (LSR): 0.007204
+Memory: 3.97 GB rank:9000 time:44.0292 Loss: 6.32933e-07 Loss (LSR) 7.50883e-06 Error mean: 0.00484066 Error std: 0.00487554 Error mean (LSR): 0.0172886 Error std (LSR): 0.0113663
+Memory: 4.54 GB rank:10000 time:54.8331 Loss: 6.32933e-07 Loss (LSR) 7.47637e-06 Error mean: 0.00484066 Error std: 0.00487554 Error mean (LSR): 0.0171432 Error std (LSR): 0.00758404
+Memory: 5.15 GB rank:11000 time:70.6697 Loss: 6.32933e-07 Loss (LSR) 4.78801e-05 Error mean: 0.00484066 Error std: 0.00487554 Error mean (LSR): 0.0442202 Error std (LSR): 0.0232946
+/home/bingxing2/home/scx6002/liuxk/pytorch-v2.0.0/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:144: operator(): block: [14,0,0], thread: [105,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+min loss_LSR: 1.4553752691881527e-07 error: 0.004840659908950329 +- 0.004875543527305126 error_LSR: 0.0034573711454868317 +- 0.003794471500441432
+Traceback (most recent call last):
+  File "MultiONetCartesian_Burgers1d_LSR.py", line 335, in <module>
+    torch.save(result, os.path.join(f'saved_models/{netType}/', 'result_LSR_p0.1.pt'))
+  File "/home/bingxing2/ailab/scxlab0095/.conda/envs/py38_cloud/lib/python3.8/site-packages/torch/serialization.py", line 441, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol)
+  File "/home/bingxing2/ailab/scxlab0095/.conda/envs/py38_cloud/lib/python3.8/site-packages/torch/serialization.py", line 665, in _save
+    storage = storage.cpu()
+  File "/home/bingxing2/ailab/scxlab0095/.conda/envs/py38_cloud/lib/python3.8/site-packages/torch/storage.py", line 121, in cpu
+    return torch.UntypedStorage(self.size()).copy_(self, False)
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+  0%|          | 0/11 [00:00<?, ?it/s]100%|██████████| 11/11 [00:00<00:00, 303.05it/s]

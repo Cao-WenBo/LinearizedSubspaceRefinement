@@ -1,0 +1,33 @@
+Memory: 2.20 GB rank:1000 time:2.06245 Loss: 4.43537e-06 Loss (LSR) 2.25662e-06 Error mean: 0.0107964 Error std: 0.0101925 Error mean (LSR): 0.0102394 Error std (LSR): 0.0104047
+Memory: 4.39 GB rank:2000 time:3.81099 Loss: 4.43537e-06 Loss (LSR) 1.11557e-06 Error mean: 0.0107964 Error std: 0.0101925 Error mean (LSR): 0.00723281 Error std (LSR): 0.00778622
+Memory: 6.58 GB rank:3000 time:6.70192 Loss: 4.43537e-06 Loss (LSR) 6.71964e-07 Error mean: 0.0107964 Error std: 0.0101925 Error mean (LSR): 0.00556643 Error std (LSR): 0.00610412
+Memory: 8.79 GB rank:4000 time:10.6491 Loss: 4.43537e-06 Loss (LSR) 4.19156e-07 Error mean: 0.0107964 Error std: 0.0101925 Error mean (LSR): 0.00455766 Error std (LSR): 0.00488652
+Memory: 11.02 GB rank:5000 time:15.4671 Loss: 4.43537e-06 Loss (LSR) 2.99487e-07 Error mean: 0.0107964 Error std: 0.0101925 Error mean (LSR): 0.00407874 Error std (LSR): 0.00445064
+Memory: 13.59 GB rank:6000 time:21.7039 Loss: 4.43537e-06 Loss (LSR) 1.99558e-07 Error mean: 0.0107964 Error std: 0.0101925 Error mean (LSR): 0.00351842 Error std (LSR): 0.00370692
+Memory: 15.88 GB rank:7000 time:30.415 Loss: 4.43537e-06 Loss (LSR) 1.3e-07 Error mean: 0.0107964 Error std: 0.0101925 Error mean (LSR): 0.00264654 Error std (LSR): 0.00265342
+Memory: 18.19 GB rank:8000 time:40.2954 Loss: 4.43537e-06 Loss (LSR) 8.69359e-08 Error mean: 0.0107964 Error std: 0.0101925 Error mean (LSR): 0.00226828 Error std (LSR): 0.00256468
+Memory: 20.51 GB rank:9000 time:47.4059 Loss: 4.43537e-06 Loss (LSR) 6.66294e-08 Error mean: 0.0107964 Error std: 0.0101925 Error mean (LSR): 0.00204788 Error std (LSR): 0.00207268
+Memory: 22.85 GB rank:10000 time:58.4544 Loss: 4.43537e-06 Loss (LSR) 8.15715e-08 Error mean: 0.0107964 Error std: 0.0101925 Error mean (LSR): 0.00214716 Error std (LSR): 0.00185347
+Memory: 25.20 GB rank:11000 time:75.5722 Loss: 4.43537e-06 Loss (LSR) 8.25263e-08 Error mean: 0.0107964 Error std: 0.0101925 Error mean (LSR): 0.00220659 Error std (LSR): 0.00163352
+Memory: 27.57 GB rank:12000 time:89.2875 Loss: 4.43537e-06 Loss (LSR) 1.71212e-07 Error mean: 0.0107964 Error std: 0.0101925 Error mean (LSR): 0.00296981 Error std (LSR): 0.00190144
+Memory: 29.95 GB rank:13000 time:109.577 Loss: 4.43537e-06 Loss (LSR) 1.558e-07 Error mean: 0.0107964 Error std: 0.0101925 Error mean (LSR): 0.0031188 Error std (LSR): 0.00233346
+Memory: 32.35 GB rank:14000 time:124.557 Loss: 4.43537e-06 Loss (LSR) 2.07633e-07 Error mean: 0.0107964 Error std: 0.0101925 Error mean (LSR): 0.00340346 Error std (LSR): 0.00240684
+min loss_LSR: 6.662943263791021e-08 error: 0.010796385817229748 +- 0.010192549787461758 error_LSR: 0.002047883113846183 +- 0.0020726805087178946
+
+
+The test loss tensor(0.0166, device='cuda:0')
+The test loss (LSR) tensor(0.0048, device='cuda:0')
+The test l2 error: tensor(0.0108, device='cuda:0')
+The test l2 error (LSR): tensor(0.0034, device='cuda:0')
+*************************************
+The test l2 error for 0: tensor(0.0293, device='cuda:0')
+The test l2 error for 0 (LSR): tensor(0.0058, device='cuda:0')
+The test l2 error for 1: tensor(0.0051, device='cuda:0')
+The test l2 error for 1 (LSR): tensor(0.0022, device='cuda:0')
+The test l2 error for 2: tensor(0.0045, device='cuda:0')
+The test l2 error for 2 (LSR): tensor(0.0016, device='cuda:0')
+The test l2 error for 3: tensor(0.0112, device='cuda:0')
+The test l2 error for 3 (LSR): tensor(0.0022, device='cuda:0')
+The test l2 error for 4: tensor(0.0114, device='cuda:0')
+The test l2 error for 4 (LSR): tensor(0.0024, device='cuda:0')
+  0%|          | 0/11 [00:00<?, ?it/s]100%|██████████| 11/11 [00:00<00:00, 301.30it/s]

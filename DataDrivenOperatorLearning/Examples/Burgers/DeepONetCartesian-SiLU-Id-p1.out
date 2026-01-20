@@ -1,0 +1,65 @@
+Memory: 2.20 GB rank:1000 time:2.16993 Loss: 2.07361e-05 Loss (LSR) 5.55654e-06 Error mean: 0.0239679 Error std: 0.0246971 Error mean (LSR): 0.0180481 Error std (LSR): 0.01991
+Memory: 4.39 GB rank:2000 time:3.9796 Loss: 2.07361e-05 Loss (LSR) 2.09553e-06 Error mean: 0.0239679 Error std: 0.0246971 Error mean (LSR): 0.0109193 Error std (LSR): 0.0113167
+Memory: 6.58 GB rank:3000 time:6.84633 Loss: 2.07361e-05 Loss (LSR) 1.2423e-06 Error mean: 0.0239679 Error std: 0.0246971 Error mean (LSR): 0.00862368 Error std (LSR): 0.00903351
+Memory: 8.79 GB rank:4000 time:10.8367 Loss: 2.07361e-05 Loss (LSR) 8.10213e-07 Error mean: 0.0239679 Error std: 0.0246971 Error mean (LSR): 0.00664582 Error std (LSR): 0.00686018
+Memory: 11.02 GB rank:5000 time:15.7527 Loss: 2.07361e-05 Loss (LSR) 5.59393e-07 Error mean: 0.0239679 Error std: 0.0246971 Error mean (LSR): 0.00559102 Error std (LSR): 0.00582767
+Memory: 13.59 GB rank:6000 time:22.6335 Loss: 2.07361e-05 Loss (LSR) 3.97016e-07 Error mean: 0.0239679 Error std: 0.0246971 Error mean (LSR): 0.00467225 Error std (LSR): 0.00476259
+Memory: 15.88 GB rank:7000 time:32.1579 Loss: 2.07361e-05 Loss (LSR) 2.93642e-07 Error mean: 0.0239679 Error std: 0.0246971 Error mean (LSR): 0.00378597 Error std (LSR): 0.00365375
+Memory: 18.19 GB rank:8000 time:42.0135 Loss: 2.07361e-05 Loss (LSR) 2.20967e-07 Error mean: 0.0239679 Error std: 0.0246971 Error mean (LSR): 0.00327776 Error std (LSR): 0.0030334
+Memory: 20.51 GB rank:9000 time:50.0649 Loss: 2.07361e-05 Loss (LSR) 1.85979e-07 Error mean: 0.0239679 Error std: 0.0246971 Error mean (LSR): 0.00299252 Error std (LSR): 0.00267095
+Memory: 22.85 GB rank:10000 time:62.8794 Loss: 2.07361e-05 Loss (LSR) 1.8938e-07 Error mean: 0.0239679 Error std: 0.0246971 Error mean (LSR): 0.00306518 Error std (LSR): 0.00283635
+Memory: 25.20 GB rank:11000 time:81.7337 Loss: 2.07361e-05 Loss (LSR) 1.90296e-07 Error mean: 0.0239679 Error std: 0.0246971 Error mean (LSR): 0.00299833 Error std (LSR): 0.00238342
+Memory: 27.57 GB rank:12000 time:95.3778 Loss: 2.07361e-05 Loss (LSR) 2.80847e-07 Error mean: 0.0239679 Error std: 0.0246971 Error mean (LSR): 0.00369265 Error std (LSR): 0.00294442
+Memory: 29.95 GB rank:13000 time:113.091 Loss: 2.07361e-05 Loss (LSR) 2.60067e-07 Error mean: 0.0239679 Error std: 0.0246971 Error mean (LSR): 0.00349095 Error std (LSR): 0.00262845
+Memory: 32.35 GB rank:14000 time:134.399 Loss: 2.07361e-05 Loss (LSR) 4.88593e-07 Error mean: 0.0239679 Error std: 0.0246971 Error mean (LSR): 0.0041687 Error std (LSR): 0.00251974
+min loss_LSR: 1.8597926043639745e-07 error: 0.023967938497662544 +- 0.02469712123274803 error_LSR: 0.0029925184790045023 +- 0.002670949324965477
+
+
+The test loss tensor(0.0344, device='cuda:0')
+The test loss (LSR) tensor(0.0066, device='cuda:0')
+The test l2 error: tensor(0.0240, device='cuda:0')
+The test l2 error (LSR): tensor(0.0042, device='cuda:0')
+*************************************
+The test l2 error for 0: tensor(0.0761, device='cuda:0')
+The test l2 error for 0 (LSR): tensor(0.0106, device='cuda:0')
+The test l2 error for 1: tensor(0.0104, device='cuda:0')
+The test l2 error for 1 (LSR): tensor(0.0019, device='cuda:0')
+The test l2 error for 2: tensor(0.0103, device='cuda:0')
+The test l2 error for 2 (LSR): tensor(0.0030, device='cuda:0')
+The test l2 error for 3: tensor(0.0171, device='cuda:0')
+The test l2 error for 3 (LSR): tensor(0.0028, device='cuda:0')
+The test l2 error for 4: tensor(0.0282, device='cuda:0')
+The test l2 error for 4 (LSR): tensor(0.0057, device='cuda:0')
+  0%|          | 0/11 [00:00<?, ?it/s]100%|██████████| 11/11 [00:00<00:00, 307.19it/s]
+
+
+
+============ Job 1096263 Performance Details ============
+JobID: 1096263
+User: scxlab0095
+Nodes、GPU: paraai-n32-h-01-agent-20: 2
+Time Range: 2025-12-17 10:30:23 - 2025-12-17 10:42:04
+Running time: 0d0H11M41S
+GPU Util: 82.85 %
+GMem Util: 65.34 %
+GMemBW Util: 42.51 %
+Tensor Core Util: 0 %
+Tensor IMMA Util: N/A
+Tensor HMMA Util: N/A
+Tensor DFMA Util: N/A
+FP64 Util: 0 %
+FP32 Util: 0 %
+FP16 Util: 0 %
+GPCIE RX: 0 B/s
+GPCIE TX: 0 B/s
+GNVLINK: N/A
+GPU Power: 207.82 W
+GPU Temperature: 40.17 °C
+
+Additional Performance Data:
+--- flops performance(avg to single card) ---
+|- fp64: 0 TFlops
+|- fp32: 0 TFlops
+|- fp16: 0 TFlops
+|- tensor: 0 TFlops
+=========================================================

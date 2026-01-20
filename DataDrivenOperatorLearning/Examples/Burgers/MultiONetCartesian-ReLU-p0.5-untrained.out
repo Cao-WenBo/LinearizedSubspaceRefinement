@@ -1,0 +1,22 @@
+Memory: 0.04 GB rank:2 time:0.740438 Loss: 0.0376019 Loss (LSR) 0.0376 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.999989 Error std (LSR): 0.00117415
+Memory: 1.12 GB rank:1000 time:1.9822 Loss: 0.0376019 Loss (LSR) 0.00134948 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.297622 Error std (LSR): 0.28498
+Memory: 2.22 GB rank:2000 time:3.83425 Loss: 0.0376019 Loss (LSR) 0.000501784 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.18851 Error std (LSR): 0.199768
+Memory: 3.34 GB rank:3000 time:6.21474 Loss: 0.0376019 Loss (LSR) 0.000232865 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.130548 Error std (LSR): 0.135017
+Memory: 4.47 GB rank:4000 time:10.502 Loss: 0.0376019 Loss (LSR) 0.000127605 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.0990277 Error std (LSR): 0.101094
+Memory: 5.61 GB rank:5000 time:13.5788 Loss: 0.0376019 Loss (LSR) 7.92068e-05 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.0790355 Error std (LSR): 0.0793907
+Memory: 7.10 GB rank:6000 time:22.1534 Loss: 0.0376019 Loss (LSR) 5.12679e-05 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.0612503 Error std (LSR): 0.0586483
+Memory: 8.31 GB rank:7000 time:31.4672 Loss: 0.0376019 Loss (LSR) 3.90053e-05 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.0528997 Error std (LSR): 0.0517024
+Memory: 9.54 GB rank:8000 time:41.5182 Loss: 0.0376019 Loss (LSR) 2.68312e-05 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.0441584 Error std (LSR): 0.0426678
+Memory: 10.79 GB rank:9000 time:54.8379 Loss: 0.0376019 Loss (LSR) 2.05661e-05 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.0391403 Error std (LSR): 0.0429723
+Memory: 12.05 GB rank:10000 time:71.0408 Loss: 0.0376019 Loss (LSR) 1.50779e-05 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.034457 Error std (LSR): 0.0332292
+Memory: 13.32 GB rank:11000 time:70.1831 Loss: 0.0376019 Loss (LSR) 1.17273e-05 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.0297637 Error std (LSR): 0.0300485
+Memory: 14.61 GB rank:12000 time:112.687 Loss: 0.0376019 Loss (LSR) 9.00171e-06 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.0275085 Error std (LSR): 0.0287798
+Memory: 15.91 GB rank:13000 time:147.329 Loss: 0.0376019 Loss (LSR) 7.09193e-06 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.0245719 Error std (LSR): 0.0267652
+Memory: 17.23 GB rank:14000 time:160.604 Loss: 0.0376019 Loss (LSR) 5.57864e-06 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.0206239 Error std (LSR): 0.0201866
+Memory: 18.57 GB rank:15000 time:219.352 Loss: 0.0376019 Loss (LSR) 4.54223e-06 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.0188811 Error std (LSR): 0.0197174
+Memory: 19.92 GB rank:16000 time:254.175 Loss: 0.0376019 Loss (LSR) 3.66453e-06 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.0174091 Error std (LSR): 0.0180938
+Memory: 21.28 GB rank:17000 time:300.02 Loss: 0.0376019 Loss (LSR) 3.02553e-06 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.0160647 Error std (LSR): 0.0171111
+Memory: 22.66 GB rank:18000 time:345.025 Loss: 0.0376019 Loss (LSR) 2.48656e-06 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.0138575 Error std (LSR): 0.0132055
+Memory: 24.05 GB rank:19000 time:416.131 Loss: 0.0376019 Loss (LSR) 2.05713e-06 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.0130113 Error std (LSR): 0.0132877
+Memory: 25.46 GB rank:20000 time:446.256 Loss: 0.0376019 Loss (LSR) 1.75337e-06 Error mean: 0.999905 Error std: 0.00144036 Error mean (LSR): 0.0123673 Error std (LSR): 0.0137398
+min loss_LSR: 1.753367200763023e-06 error: 0.9999049305915833 +- 0.0014403641689568758 error_LSR: 0.012367282062768936 +- 0.013739758171141148

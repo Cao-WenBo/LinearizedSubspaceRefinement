@@ -1,0 +1,28 @@
+Memory: 0.44 GB rank:1000 time:1.82449 Loss: 3.05289e-07 Loss (LSR) 8.58312e-08 Error mean: 0.00359531 Error std: 0.00243911 Error mean (LSR): 0.00201272 Error std (LSR): 0.00162173
+Memory: 0.73 GB rank:2000 time:3.20907 Loss: 3.05289e-07 Loss (LSR) 7.77657e-08 Error mean: 0.00359531 Error std: 0.00243911 Error mean (LSR): 0.00192675 Error std (LSR): 0.00152241
+Memory: 1.04 GB rank:3000 time:5.27744 Loss: 3.05289e-07 Loss (LSR) 6.34155e-08 Error mean: 0.00359531 Error std: 0.00243911 Error mean (LSR): 0.00192037 Error std (LSR): 0.00166886
+Memory: 1.39 GB rank:4000 time:8.13221 Loss: 3.05289e-07 Loss (LSR) 4.80652e-08 Error mean: 0.00359531 Error std: 0.00243911 Error mean (LSR): 0.00171809 Error std (LSR): 0.00147173
+Memory: 1.77 GB rank:5000 time:12.2216 Loss: 3.05289e-07 Loss (LSR) 2.30311e-06 Error mean: 0.00359531 Error std: 0.00243911 Error mean (LSR): 0.00878805 Error std (LSR): 0.00304019
+Memory: 2.42 GB rank:6000 time:17.2927 Loss: 3.05289e-07 Loss (LSR) 1.98336e-06 Error mean: 0.00359531 Error std: 0.00243911 Error mean (LSR): 0.00825165 Error std (LSR): 0.00263297
+Memory: 2.91 GB rank:7000 time:23.1177 Loss: 3.05289e-07 Loss (LSR) 8.88583e-06 Error mean: 0.00359531 Error std: 0.00243911 Error mean (LSR): 0.0174963 Error std (LSR): 0.0078317
+Memory: 3.42 GB rank:8000 time:30.3033 Loss: 3.05289e-07 Loss (LSR) 6.03912e-05 Error mean: 0.00359531 Error std: 0.00243911 Error mean (LSR): 0.0429711 Error std (LSR): 0.00862757
+Memory: 3.97 GB rank:9000 time:47.5008 Loss: 3.05289e-07 Loss (LSR) 2.13255e-05 Error mean: 0.00359531 Error std: 0.00243911 Error mean (LSR): 0.0263888 Error std (LSR): 0.00832084
+Memory: 4.54 GB rank:10000 time:71.886 Loss: 3.05289e-07 Loss (LSR) 9.06477e-06 Error mean: 0.00359531 Error std: 0.00243911 Error mean (LSR): 0.0157154 Error std (LSR): 0.00563983
+Memory: 5.15 GB rank:11000 time:733.095 Loss: 3.05289e-07 Loss (LSR)    nan Error mean: 0.00359531 Error std: 0.00243911 Error mean (LSR):    nan Error std (LSR):    nan
+/home/bingxing2/home/scx6002/liuxk/pytorch-v2.0.0/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:144: operator(): block: [8,0,0], thread: [94,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+min loss_LSR: nan error: 0.003595310263335705 +- 0.002439110539853573 error_LSR: nan +- nan
+Traceback (most recent call last):
+  File "DeepONetCartesian_Burgers1d_LSR.py", line 336, in <module>
+    torch.save(result, os.path.join(f'saved_models/{netType}/', 'result_LSR_p0.1.pt'))
+  File "/home/bingxing2/ailab/scxlab0095/.conda/envs/py38_cloud/lib/python3.8/site-packages/torch/serialization.py", line 441, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol)
+  File "/home/bingxing2/ailab/scxlab0095/.conda/envs/py38_cloud/lib/python3.8/site-packages/torch/serialization.py", line 665, in _save
+    storage = storage.cpu()
+  File "/home/bingxing2/ailab/scxlab0095/.conda/envs/py38_cloud/lib/python3.8/site-packages/torch/storage.py", line 121, in cpu
+    return torch.UntypedStorage(self.size()).copy_(self, False)
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+  0%|          | 0/11 [00:00<?, ?it/s]100%|██████████| 11/11 [00:00<00:00, 305.52it/s]

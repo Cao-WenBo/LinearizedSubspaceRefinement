@@ -1,0 +1,65 @@
+gcc-9.3.0 loaded successful
+cuda-11.8 loaded successful
+Memory: 1.55 GB time: 11.815347671508789 Train Accuracy: 0.0977 Train Accuracy (LSR): 0.0652 Test Accuracy: 0.0974 Test Accuracy (LSR): 0.0695
+Memory: 4.91 GB time: 222.8973424434662 Train Accuracy: 0.0975 Train Accuracy (LSR): 0.8545 Test Accuracy: 0.0974 Test Accuracy (LSR): 0.8653
+Memory: 6.23 GB time: 446.8990182876587 Train Accuracy: 0.0976 Train Accuracy (LSR): 0.8866 Test Accuracy: 0.0974 Test Accuracy (LSR): 0.8965
+Memory: 7.74 GB time: 676.1471879482269 Train Accuracy: 0.0973 Train Accuracy (LSR): 0.9106 Test Accuracy: 0.0974 Test Accuracy (LSR): 0.9139
+Memory: 9.25 GB time: 900.4284687042236 Train Accuracy: 0.0975 Train Accuracy (LSR): 0.9289 Test Accuracy: 0.0974 Test Accuracy (LSR): 0.9325
+Memory: 11.37 GB time: 1125.230523109436 Train Accuracy: 0.0975 Train Accuracy (LSR): 0.9405 Test Accuracy: 0.0974 Test Accuracy (LSR): 0.9434
+Memory: 13.67 GB time: 1351.6965305805206 Train Accuracy: 0.0976 Train Accuracy (LSR): 0.9475 Test Accuracy: 0.0974 Test Accuracy (LSR): 0.9495
+Memory: 16.00 GB time: 1585.4584386348724 Train Accuracy: 0.0975 Train Accuracy (LSR): 0.9545 Test Accuracy: 0.0974 Test Accuracy (LSR): 0.9547
+Memory: 18.34 GB time: 1814.3112082481384 Train Accuracy: 0.0976 Train Accuracy (LSR): 0.9569 Test Accuracy: 0.0974 Test Accuracy (LSR): 0.9590
+Memory: 20.69 GB time: 2046.2444972991943 Train Accuracy: 0.0975 Train Accuracy (LSR): 0.9601 Test Accuracy: 0.0974 Test Accuracy (LSR): 0.9594
+Memory: 23.06 GB time: 2280.0764062404633 Train Accuracy: 0.0976 Train Accuracy (LSR): 0.9627 Test Accuracy: 0.0974 Test Accuracy (LSR): 0.9634
+Memory: 25.44 GB time: 2525.4686501026154 Train Accuracy: 0.0976 Train Accuracy (LSR): 0.9648 Test Accuracy: 0.0974 Test Accuracy (LSR): 0.9647
+Memory: 27.84 GB time: 2763.037769317627 Train Accuracy: 0.0975 Train Accuracy (LSR): 0.9657 Test Accuracy: 0.0974 Test Accuracy (LSR): 0.9641
+Memory: 30.25 GB time: 3006.91477560997 Train Accuracy: 0.0971 Train Accuracy (LSR): 0.9684 Test Accuracy: 0.0974 Test Accuracy (LSR): 0.9662
+Memory: 32.68 GB time: 3249.147966146469 Train Accuracy: 0.0973 Train Accuracy (LSR): 0.9692 Test Accuracy: 0.0974 Test Accuracy (LSR): 0.9670
+Memory: 35.12 GB time: 3506.9173905849457 Train Accuracy: 0.0977 Train Accuracy (LSR): 0.9696 Test Accuracy: 0.0974 Test Accuracy (LSR): 0.9678
+Traceback (most recent call last):
+  File "/home/bingxing2/home/scx7es2/Classification/CLS_LSR.py", line 217, in <module>
+    lsr.train(rank_LSR)
+  File "/home/bingxing2/home/scx7es2/Classification/CLS_LSR.py", line 138, in train
+    self.LSR(rank=rank_LSR)
+  File "/home/bingxing2/home/scx7es2/Classification/CLS_LSR.py", line 98, in LSR
+    U, S, Vh = torch.linalg.svd(JTQ.T, full_matrices=False)
+RuntimeError: cusolver error: CUSOLVER_STATUS_INVALID_VALUE, when calling `cusolverDnSgesvdj_bufferSize(handle, jobz, econ, m, n, A, lda, S, U, ldu, V, ldv, lwork, params)`
+  0%|          | 0/55 [00:00<?, ?it/s]100%|██████████| 55/55 [00:00<00:00, 664.47it/s]
+
+
+
+============ Job 1128114 Performance Details ============
+JobID: 1128114
+User: scx7es2
+Nodes、GPU: paraai-n32-h-01-agent-36: 1
+Time Range: 2026-01-19 20:33:09 - 2026-01-20 05:02:57
+Running time: 0d8H29M48S
+GPU Util: 99.24 %
+GMem Util: 61.77 %
+GMemBW Util: 19.18 %
+Tensor Core Util: 0.29 %
+Tensor IMMA Util: N/A
+Tensor HMMA Util: N/A
+Tensor DFMA Util: N/A
+FP64 Util: 0 %
+FP32 Util: 17.26 %
+FP16 Util: 0 %
+GPCIE RX: 689.70 MB/s
+GPCIE TX: 84.74 MB/s
+GNVLINK: N/A
+GPU Power: 235.57 W
+GPU Temperature: 43.86 °C
+
+Additional Performance Data:
+--- flops performance(avg to single card) ---
+|- fp64: 0 TFlops
+|- fp32: 3 TFlops
+> |- GMEMBW/F: 98,662 B/MF
+> |- NVLINK/F: No Data
+> |- IB_TX/F: 0 B/MF
+> |- IB_RX/F: 0 B/MF
+> |- PCIE_TX/F: 27 B/MF
+> |- PCIE_RX/F: 218 B/MF
+|- fp16: 0 TFlops
+|- tensor: 1 TFlops
+=========================================================

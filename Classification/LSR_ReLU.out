@@ -1,0 +1,24 @@
+Memory: 1.55 GB time: 11.955708265304565 Train Accuracy: 0.0952 Train Accuracy (LSR): 0.0977 Test Accuracy: 0.0962 Test Accuracy (LSR): 0.0974
+Memory: 4.91 GB time: 225.484605550766 Train Accuracy: 0.0950 Train Accuracy (LSR): 0.8749 Test Accuracy: 0.0962 Test Accuracy (LSR): 0.8829
+Memory: 6.15 GB time: 451.8105003833771 Train Accuracy: 0.0951 Train Accuracy (LSR): 0.9118 Test Accuracy: 0.0962 Test Accuracy (LSR): 0.9177
+Memory: 7.67 GB time: 683.5252840518951 Train Accuracy: 0.0948 Train Accuracy (LSR): 0.9300 Test Accuracy: 0.0962 Test Accuracy (LSR): 0.9358
+Memory: 9.18 GB time: 910.3367593288422 Train Accuracy: 0.0950 Train Accuracy (LSR): 0.9403 Test Accuracy: 0.0962 Test Accuracy (LSR): 0.9431
+Memory: 11.37 GB time: 1137.8013167381287 Train Accuracy: 0.0950 Train Accuracy (LSR): 0.9465 Test Accuracy: 0.0962 Test Accuracy (LSR): 0.9491
+Memory: 13.67 GB time: 1366.8050210475922 Train Accuracy: 0.0951 Train Accuracy (LSR): 0.9513 Test Accuracy: 0.0962 Test Accuracy (LSR): 0.9541
+Memory: 16.00 GB time: 1602.650348186493 Train Accuracy: 0.0949 Train Accuracy (LSR): 0.9552 Test Accuracy: 0.0962 Test Accuracy (LSR): 0.9534
+Memory: 18.34 GB time: 1834.4885909557343 Train Accuracy: 0.0952 Train Accuracy (LSR): 0.9566 Test Accuracy: 0.0962 Test Accuracy (LSR): 0.9581
+Memory: 20.69 GB time: 2068.906824827194 Train Accuracy: 0.0950 Train Accuracy (LSR): 0.9591 Test Accuracy: 0.0962 Test Accuracy (LSR): 0.9603
+Memory: 23.06 GB time: 2305.095316886902 Train Accuracy: 0.0952 Train Accuracy (LSR): 0.9613 Test Accuracy: 0.0962 Test Accuracy (LSR): 0.9606
+Memory: 25.44 GB time: 2553.282153606415 Train Accuracy: 0.0951 Train Accuracy (LSR): 0.9636 Test Accuracy: 0.0962 Test Accuracy (LSR): 0.9620
+Memory: 27.84 GB time: 2794.5079367160797 Train Accuracy: 0.0950 Train Accuracy (LSR): 0.9650 Test Accuracy: 0.0962 Test Accuracy (LSR): 0.9640
+Memory: 30.25 GB time: 3039.9142179489136 Train Accuracy: 0.0946 Train Accuracy (LSR): 0.9660 Test Accuracy: 0.0962 Test Accuracy (LSR): 0.9633
+Memory: 32.68 GB time: 3286.6308159828186 Train Accuracy: 0.0949 Train Accuracy (LSR): 0.9673 Test Accuracy: 0.0962 Test Accuracy (LSR): 0.9643
+Memory: 35.12 GB time: 3547.1762754917145 Train Accuracy: 0.0953 Train Accuracy (LSR): 0.9685 Test Accuracy: 0.0962 Test Accuracy (LSR): 0.9643
+Traceback (most recent call last):
+  File "/home/bingxing2/home/scx7es2/Classification/CLS_LSR.py", line 217, in <module>
+    lsr.train(rank_LSR)
+  File "/home/bingxing2/home/scx7es2/Classification/CLS_LSR.py", line 138, in train
+    self.LSR(rank=rank_LSR)
+  File "/home/bingxing2/home/scx7es2/Classification/CLS_LSR.py", line 98, in LSR
+    U, S, Vh = torch.linalg.svd(JTQ.T, full_matrices=False)
+RuntimeError: cusolver error: CUSOLVER_STATUS_INVALID_VALUE, when calling `cusolverDnSgesvdj_bufferSize(handle, jobz, econ, m, n, A, lda, S, U, ldu, V, ldv, lwork, params)`
