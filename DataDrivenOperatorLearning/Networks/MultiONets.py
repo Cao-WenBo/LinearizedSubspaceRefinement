@@ -42,11 +42,19 @@ class MultiONetBatch(nn.Module):
             self.hidden_in =  hidden 
         self.net_x = nn.Sequential(*net_x)
         self.net_a = nn.Sequential(*net_a)
+        # The output layer 
+        # self.w = torch.nn.ParameterList(
+        #     [torch.nn.Parameter(torch.tensor(0.0)) for _ in range(self.l)]
+        #     )
+        # self.b = torch.nn.Parameter(torch.tensor(0.0, dtype=dtype))
         # The output layer
         self.w = torch.nn.ParameterList(
-            [torch.nn.Parameter(torch.tensor(0.0)) for _ in range(self.l)]
-            )
-        self.b = torch.nn.Parameter(torch.tensor(0.0, dtype=dtype))
+            [
+                torch.nn.Parameter(0.01 * torch.randn((), dtype=dtype))
+                for _ in range(self.l)
+            ]
+        )
+        self.b = torch.nn.Parameter(0.01 * torch.randn((), dtype=dtype))
     
     def forward(self, x, a_mesh):
         '''
@@ -160,10 +168,18 @@ class MultiONetCartesianProd(nn.Module):
         self.net_x = nn.Sequential(*net_x)
         self.net_a = nn.Sequential(*net_a)
         # The output layer 
+        # self.w = torch.nn.ParameterList(
+        #     [torch.nn.Parameter(torch.tensor(0.0)) for _ in range(self.l)]
+        #     )
+        # self.b = torch.nn.Parameter(torch.tensor(0.0, dtype=dtype))
+        # The output layer
         self.w = torch.nn.ParameterList(
-            [torch.nn.Parameter(torch.tensor(0.0)) for _ in range(self.l)]
-            )
-        self.b = torch.nn.Parameter(torch.tensor(0.0, dtype=dtype))
+            [
+                torch.nn.Parameter(0.01 * torch.randn((), dtype=dtype))
+                for _ in range(self.l)
+            ]
+        )
+        self.b = torch.nn.Parameter(0.01 * torch.randn((), dtype=dtype))
     
     def forward(self, x, a_mesh):
         '''
