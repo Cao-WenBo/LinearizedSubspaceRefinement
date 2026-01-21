@@ -107,7 +107,7 @@ class SupervisedLearning():
         
         oversample = 10
         k = rank + oversample
-        chunk_size = 600  # This parameter depends on the size of the GPU memory.
+        chunk_size = 100  # This parameter depends on the size of the GPU memory.
 
         def JV_fn(params_vector_batch, chunk_size=chunk_size):
             VV = params_vector_batch.T
