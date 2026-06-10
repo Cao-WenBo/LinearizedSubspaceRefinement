@@ -1,4 +1,4 @@
-# A Universal Linearized Subspace Refinement Framework for Neural Networks
+# Linearized subspace refinement framework to expose hidden accuracy in trained neural networks
 
 **Wenbo Cao**, **Weiwei Zhang***  
 a School of Aeronautics, Northwestern Polytechnical University, Xi’an 710072, China  
@@ -9,7 +9,7 @@ c National Key Laboratory of Aircraft Configuration Design, Xi’an 710072, Chin
 
 ## Abstract
 
-Neural networks are typically trained using gradient-based methods, yet in many applications their final predictions remain far from the best accuracy attainable within the model’s expressive capacity. Here we introduce Linearized Subspace Refinement (LSR), a general and architecture-agnostic framework that exploits the Jacobian-induced linear residual model at a fixed trained network state. By solving the associated residual problem through a reduced direct least-squares formulation, LSR obtains a subspace-optimal solution of the linearized residual model, yielding a refined linear predictor with markedly improved accuracy over standard gradient-trained solutions—without modifying network architectures, loss formulations, or training procedures. Across a range of learning paradigms—including function approximation, data-driven operator learning, and physics-informed operator fine-tuning—we show that the accuracy achieved by gradient-based training often remains far from the attainable accuracy, even when local linearization yields a convex problem, suggesting that loss-induced ill-conditioning can constitute a dominant practical bottleneck, beyond issues of model expressivity or nonconvexity. In contrast, one-shot LSR consistently exposes accuracy levels that are inaccessible to standard gradient-based training, often yielding order-of-magnitude error reductions. For operator-constrained problems with composite loss structures, we further introduce Iterative LSR, which alternates one-shot LSR with supervised nonlinear alignment, converting ill-conditioned residual minimization into numerically benign fitting steps and yielding substantially accelerated convergence and improved accuracy. By bridging nonlinear neural representations with reduced-order linear solvers at fixed linearization points, LSR provides a numerically grounded, broadly applicable refinement framework for modern neural networks in supervised learning, operator learning, and scientific computing. 
+Neural networks trained by gradient-based methods often exhibit optimization-induced accuracy plateaus in scientific machine learning tasks. We present Linearized Subspace Refinement (LSR), an architecture-agnostic post-training framework that exploits the local linearized model at a fixed trained state. By solving a reduced direct least-squares problem in a Jacobian-defined low-dimensional space, LSR computes a subspace-optimal linearized correction and yields a refined predictor with markedly improved accuracy. Across function approximation, data-driven operator learning, physics-informed operator fine-tuning, and noisy inverse problems, LSR shows that standard nonlinear training can remain far above this subspace-attainable error level. Similar accuracy plateaus persist even for the convex quadratic problem from local linearization when solved with standard iterative optimizers, identifying numerical ill-conditioning as a primary bottleneck. LSR frequently delivers order-of-magnitude error reductions, while the subspace rank provides an explicit capacity-control mechanism that balances correction strength, numerical stability, and noise sensitivity. Together, LSR exposes conditioning-limited attainable accuracy in trained-state linearized models and provides direct access to it. 
 
 ---
 
@@ -33,7 +33,7 @@ The physics-informed operator learning experiments are based on the implementati
 - In this project, the trained JAX models are converted to **PyTorch**.
 - A PyTorch-based implementation of **LSR** is then applied on top of the converted models.
 
-### Burgers Equation
+### Burgers Equation in physics-informed operator learning 
 
 For the Burgers equation experiments, the training data must be generated **following the instructions in the original repository README**.  
 Please ensure that the data generation step is completed before running the corresponding scripts in this project.
@@ -42,10 +42,5 @@ Please ensure that the data generation step is completed before running the corr
 
 ## Additional Experiments
 
-- **Function approximation:**  
-  All scripts for the function-fitting experiments (including training and LSR evaluation) are included in this repository. The datasets used in these experiments are generated directly by the provided scripts.
-
-- **PDE solving:**  
-  All scripts for the PDE-solving experiments and Iterative LSR are included in this repository. Any required configuration files and small auxiliary data (e.g., reference grids or checkpoints, if applicable) are provided alongside the code, or generated by the scripts as described in the corresponding experiment folders.
-
-  
+- **Function approximation:**     All scripts for reproducing the function-approximation experiments, including model training and LSR evaluation, are included in this repository. The datasets used in these experiments are generated directly by the provided scripts.  
+- **Rank-controlled LSR for noisy inverse problems:**     All scripts for reproducing the rank-controlled noisy inverse-problem experiments are included in this repository. Required configuration files and small auxiliary data files are provided alongside the code. 
